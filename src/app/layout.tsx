@@ -74,8 +74,6 @@ export default function RootLayout({
             <div className="flex flex-col bg-white w-full mx-auto">
               <div className="relative flex flex-col items-center justify-center max-w-[1440px] bg-[#0A0118] dark:bg-white mx-auto w-full  ">
                 <div
-                  data-aos-duration="3000"
-                  data-aos="fade-top"
                   className={`flex flex-row items-center justify-between z-50 w-full p-3 gap-5 ${
                     isTopNavFixed
                       ? "fixed top-0 w-full r-0 l-0 bg-transparent "
@@ -113,7 +111,7 @@ export default function RootLayout({
                     </Button>
                   </SideBarLastItem>
                 </div>
-                <div className=" flex flex-col gap-2 w-full">{children}</div>
+                {children}
                 <Fotter />
               </div>
             </div>

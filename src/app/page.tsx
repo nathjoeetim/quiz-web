@@ -14,9 +14,10 @@ import { PlayCircleIcon } from "lucide-react";
 import { FcRating } from "react-icons/fc";
 import styled from "styled-components";
 import TipContentComponent from "@/components/top-content";
-import FotterComponent from "@/components/fotter";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -63,6 +64,9 @@ export default function Home() {
       </HeaderContainer>
       <div className="px-4 py-2 flex flex-row text-white font-bold mt-3 w-[96%] p-5 mx-auto gap-8 overflow-x-scroll mb-2 hide-scrollbar">
         {AvalableGameData.map((element, index) => {
+          function onNavigateToQuizPage() {
+            router.push("quiz");
+          }
           return (
             <Card
               key={element.id}
@@ -98,7 +102,11 @@ export default function Home() {
                 <div className="text-slate-400 font-normal text-[11px] flex flex-row items-center justify-between ">
                   <h4>Players: {element.active_players}</h4>
                   <Button className="bg-yellow-600 hover:bg-yellow-400 px-2 py-1">
-                    <PlayCircleIcon className="w-5 h-5 " color="white" />
+                    <PlayCircleIcon
+                      className="w-5 h-5 "
+                      color="white"
+                      onClick={onNavigateToQuizPage}
+                    />
                   </Button>
                 </div>
               </div>
