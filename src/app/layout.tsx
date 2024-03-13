@@ -14,6 +14,7 @@ import { BsQuestionSquare } from "react-icons/bs";
 import { NavigationMenuComponent } from "@/components/navigationa_menu";
 import { Button } from "@/components/ui/button";
 import { SideBar } from "@/components/sideBar";
+import Fotter from "@/components/fotter";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -113,6 +114,7 @@ export default function RootLayout({
                   </SideBarLastItem>
                 </div>
                 <div className=" flex flex-col gap-2 w-full">{children}</div>
+                <Fotter />
               </div>
             </div>
           ) : (

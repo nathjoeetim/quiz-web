@@ -107,7 +107,7 @@ export default function Home() {
         })}
       </div>
       <TipContentComponent />
-      <FotterComponent />
+      {/* <FotterComponent /> */}
     </div>
   );
 }
