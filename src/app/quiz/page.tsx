@@ -55,10 +55,15 @@ function SelectedQuizComponent() {
 }
 
 export default SelectedQuizComponent;
+
 const ContainerSelectedQuiz = styled.div`
+  & p {
+    max-width: 500px;
+  }
   @media screen and (max-width: 608px) {
     flex-direction: column;
     gap: 20px;
+
     & p {
       width: 100%;
     }

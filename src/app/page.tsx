@@ -38,7 +38,7 @@ export default function Home() {
             <Button className="mt-4 bg-yellow-600">Play Anonymously</Button>
           </div>
         </HeaderCol1>
-        <div className="flex flex-row items-center justify-start flex-1 relative">
+        <div className="flex flex-row items-center justify-start flex-1 relative h-fit">
           <div className="flex flex-col items-center justify-start absolute top-[20%] left-0 gap-2 max-md:left-[20px]  z-30">
             {ListQuizeData.map((element, index) => {
               return (
@@ -57,7 +57,7 @@ export default function Home() {
           <MotionImage
             imageJson={questionMotion}
             loop={false}
-            height="200px"
+            height="220px"
             width="300px"
           />
         </div>
