@@ -23,7 +23,7 @@ function MotionImage({ imageJson, loop, height, width }: MotionImageAlises) {
 
   return (
     <div
-      className={`${height ? `h-[${height}]` : "h-[150px]"} ${
+      className={`${height ? `h-[${height}]` : "h-[200px]"} ${
         width ? `h-[${width}]` : "max-w-[200px] z-30 "
       }`}
     >

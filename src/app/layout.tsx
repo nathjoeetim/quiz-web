@@ -116,7 +116,7 @@ export default function RootLayout({
               </div>
             </div>
           ) : (
-            <div className="w-full h-fit">
+            <div className="w-full">
               <HandLoader />
             </div>
           )}

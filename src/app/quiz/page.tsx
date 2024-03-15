@@ -1,28 +1,24 @@
 "use client";
 import Image from "next/image";
 import courseImage from "@/app/assets/Frame9.png";
-import { CiPlay1 } from "react-icons/ci";
-import { LuFileSpreadsheet } from "react-icons/lu";
 import styled from "styled-components";
+import { RulesDialogComponent } from "@/components/rules";
+import { QuizQuestionComponent } from "@/components/quizQuestion";
 
 function SelectedQuizComponent() {
   return (
-    <ContainerSelectedQuiz className="flex flex-row items-start w-full px-10 gap-20 mt-10 mb-2">
-      <div className="flex flex-col items-start gap-7 w-[250px]">
+    <ContainerSelectedQuiz className="flex flex-row items-start w-full px-10  py-10 gap-20 mt-10 mb-2">
+      <div className="flex flex-col items-start gap-7 w-[300px]">
         <Image
           src={courseImage}
           alt="course-image"
           width={200}
           height={200}
-          className="w-[250px] h-[200px] rounded-lg "
+          className="w-[250px] h-[200px] rounded-lg"
         />
         <div className="flex flex-row gap-5 w-full justify-end items-center">
-          <LuFileSpreadsheet
-            size={20}
-            color="yellow"
-            className="cursor-pointer"
-          />
-          <CiPlay1 size={20} color="yellow" className="cursor-pointer" />
+          <RulesDialogComponent />
+          <QuizQuestionComponent />
         </div>
         <div className="flex flex-row w-[200px] gap-6">{/*  */}</div>
         <p className="text-white font-normal text-justify">
@@ -46,7 +42,7 @@ function SelectedQuizComponent() {
             <span className="text-slate-400 font-bold text-1xl">
               Maximum Question:
             </span>
-            <span className="text-slate-400 font-normal text-lg">20</span>
+            <span className="text-slate-400 font-normal text-lg">5</span>
           </div>
         </div>
       </div>
