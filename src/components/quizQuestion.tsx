@@ -156,9 +156,7 @@ export function QuizQuestionComponent() {
                       key={element.id}
                       className={`flex items-center h-[40px] pl-[15px] border border-bg-[#686868] text-xl w-full cursor-pointer ${
                         selectedAnswer === element.id
-                          ? element.id === question.ans
-                            ? "bg-[#dffff2] border-bg-[#00d397]"
-                            : "bg-[#FFEBEB] border-bg-[#FF4A4A]"
+                          ? "bg-[#dffff2] border-bg-[#00d397]"
                           : ""
                       }`}
                     >
