@@ -15,6 +15,7 @@ import { NavigationMenuComponent } from "@/components/navigationa_menu";
 import { Button } from "@/components/ui/button";
 import { SideBar } from "@/components/sideBar";
 import Fotter from "@/components/fotter";
+import { useRouter } from "next/navigation";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
 }>) {
   const [isTopNavFixed, setIsTopNavFixed] = useState(false);
   const [isMounted, setIsMounted] = useState<Boolean>(false);
+  const router = useRouter();
 
   useEffect(() => {
     setIsMounted(true);
@@ -60,6 +62,10 @@ export default function RootLayout({
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isTopNavFixed]);
+
+  function onNavigateToGamePageFn() {
+    router.push("quiz");
+  }
 
   return (
     <html lang="en" className="custom-scrollbar">
@@ -106,7 +112,10 @@ export default function RootLayout({
                         }`}
                       />
                     </TwoIconsContainer>
-                    <Button className="text-gold bg-yellow-600">
+                    <Button
+                      className="text-gold bg-yellow-600"
+                      onClick={onNavigateToGamePageFn}
+                    >
                       Start Playing
                     </Button>
                   </SideBarLastItem>

@@ -14,7 +14,7 @@ function SelectedQuizComponent() {
           alt="course-image"
           width={200}
           height={200}
-          className="w-[250px] h-[200px] rounded-lg"
+          className="w-[300px] h-[200px] rounded-lg"
         />
         <div className="flex flex-row gap-5 w-full justify-end items-center">
           <RulesDialogComponent />
@@ -22,27 +22,27 @@ function SelectedQuizComponent() {
         </div>
         <div className="flex flex-row w-[200px] gap-6">{/*  */}</div>
         <p className="text-white font-normal text-justify">
-          This is a math quiz equiped with the best and equiped for the mordern
+          This quiz is equiped with the best and equiped for the mordern
           education standard.{" "}
         </p>
       </div>
       <div className="flex flex-col gap-4 text-white w-full">
-        <h5 className=" font-bold text-3xl">Math quiz</h5>
+        <h5 className=" font-bold text-3xl">Computer quiz</h5>
         <div className="flex flex-col gap-4">
           <p className="text-justify">
-            This Math quiz is a highly competivive quiz with a minimum of 20
-            questions to which the result will be displayed immidiately after
-            the quiz
+            This quiz is a highly competivive quiz with a minimum of 6 questions
+            to which the result will be displayed immidiately after the quiz .{" "}
+            <br /> <br /> Best of luck!!!
           </p>
-          <div className="flex flex-row items-center justify-start gap-4">
+          <div className="flex flex-row items-center justify-start gap-3">
             <span className="text-slate-400 font-bold text-1xl">Level:</span>
             <span className="text-slate-400 font-normal text-lg">Basic</span>
           </div>
-          <div className="flex flex-row items-center justify-start gap-4">
+          <div className="flex flex-row items-center justify-start gap-3">
             <span className="text-slate-400 font-bold text-1xl">
               Maximum Question:
             </span>
-            <span className="text-slate-400 font-normal text-lg">5</span>
+            <span className="text-slate-400 font-normal text-lg">6</span>
           </div>
         </div>
       </div>

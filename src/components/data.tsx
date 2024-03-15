@@ -31,13 +31,13 @@ export const AvalableGameData: AllQuizCardAlises[] = [
     active_players: 112,
     rating: 2,
     level: "Beginner",
-    name: "Science Quiz",
+    name: "Computer Quiz",
   },
   {
     id: 1234,
     active_players: 182,
     rating: 5,
-    name: "Math Quiz",
+    name: "Programing Quiz",
     level: "Intermidiate",
   },
   {
@@ -45,7 +45,7 @@ export const AvalableGameData: AllQuizCardAlises[] = [
     active_players: 152,
     rating: 1,
     level: "Intermidiate",
-    name: "English Quiz",
+    name: "History Quiz",
   },
   {
     id: 10,

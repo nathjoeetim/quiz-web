@@ -67,9 +67,9 @@ export function QuizQuestionComponent() {
     setShowResult(true);
 
     setResult({
-      score: correct.length + 1,
+      score: correct.length > 0 ? correct.length + 1 : correct.length,
       correctAnswer: correct.length > 0 ? correct.length + 1 : correct.length,
-      wrongAnswers: wrong.length,
+      wrongAnswers: wrong.length > 0 ? wrong.length + 1 : wrong.length,
     });
   }
 
@@ -141,7 +141,7 @@ export function QuizQuestionComponent() {
               Quiz Question
             </AlertDialogTitle>
             <AlertDialogDescription className="flex flex-col gap-4">
-              <span className="text-[17px] font-medium">
+              <span className="text-[18px] font-bold">
                 {index + 1}. {question.question}
               </span>
               <span className="flex flex-col items-center justify-start gap-4 w-full">
