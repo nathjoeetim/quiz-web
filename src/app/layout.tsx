@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { SideBar } from "@/components/sideBar";
 import Fotter from "@/components/fotter";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -69,6 +70,10 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="custom-scrollbar">
+      <Head>
+        <title>Mi-Ni Quiz</title>
+        <meta name="description" content="Best IQ Game Globally" />
+      </Head>
       <body
         className={cn(
           "min-h-screen bg-background antialiased custom-scrollbar font-serif ",
