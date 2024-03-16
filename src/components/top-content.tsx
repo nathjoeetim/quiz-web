@@ -38,8 +38,6 @@ function TipContentComponent() {
             <h4 className="font-semibold text-base">100% Safe and Secure</h4>
             <ul className="w-[220px]">
               <li className="list-disc">Complete Data and Identity Privacy</li>
-              {/* <li className="list-disc">World Class Anti-Fraud system</li> */}
-              {/* <li className="list-disc">World Class Anti-Fraud system</li> */}
             </ul>
           </div>
         </div>

@@ -81,7 +81,11 @@ export default function RootLayout({
         )}
       >
         <>
-          {isMounted ? (
+          {!isMounted ? (
+            <div className="w-full">
+              <HandLoader />
+            </div>
+          ) : (
             <div className="flex flex-col bg-white w-full mx-auto">
               <div className="relative flex flex-col items-center justify-center max-w-[1440px] bg-[#0A0118] dark:bg-white mx-auto w-full  ">
                 <div
@@ -128,10 +132,6 @@ export default function RootLayout({
                 {children}
                 <Fotter />
               </div>
-            </div>
-          ) : (
-            <div className="w-full">
-              <HandLoader />
             </div>
           )}
         </>

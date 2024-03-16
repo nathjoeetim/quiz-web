@@ -19,22 +19,22 @@ import MotionImage from "./hooks/motionImage";
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Math Quiz",
-    href: "/docs/primitives/alert-dialog",
+    href: "/",
     description: "We have differnt models of student of different class.",
   },
   {
     title: "Religion Quiz",
-    href: "/docs/primitives/hover-card",
+    href: "/",
     description: "Questions reqarding the religious scripture.",
   },
   {
     title: "English Quiz",
-    href: "/docs/primitives/progress",
+    href: "/",
     description: "This containes sections like spelling, essey writing, etc.",
   },
   {
     title: "Word Quiz",
-    href: "/docs/primitives/scroll-area",
+    href: "/",
     description: "Fill in the missing word contest.",
   },
 ];
