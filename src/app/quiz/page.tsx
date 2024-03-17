@@ -50,12 +50,12 @@ function SelectedQuizComponent() {
         </div>
       </ContainerSelectedQuiz>
       <div className="flex flex-col items-center w-full my-8">
-        <h4 className="text-3xl font-bold text-white ">
+        <h4 className="text-2xl font-bold text-white ">
           Other Recommended Quiz
         </h4>
         <AllQuizOptionComponent />
       </div>
-      <div className="flex flex-col items-center w-full my-8">
+      {/* <div className="flex flex-col items-center w-full my-8">
         <h4 className="text-3xl font-bold text-white ">Top Players</h4>
         <div className="flex flex-col items-start justify-start w-full p-2 text-white gap-3">
           <div className="flex flex-row items-center gap-3 border-b-2 w-[350px] ">
@@ -80,7 +80,7 @@ function SelectedQuizComponent() {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
