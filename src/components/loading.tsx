@@ -4,13 +4,8 @@ import MotionImage from "./hooks/motionImage";
 
 export default function HandLoader() {
   return (
-    <div className="flex flex-col gap-4 h-[340px] bg-gray-200 items-center justify-center w-250px">
-      <MotionImage
-        imageJson={loader}
-        loop={true}
-        height="220px"
-        width="200px"
-      />
+    <div className="flex flex-col gap-4 h-[100vh] bg-gray-200 items-center justify-center w-full p-20">
+      <MotionImage imageJson={loader} loop={true} height="100vh" width="100%" />
     </div>
   );
 }

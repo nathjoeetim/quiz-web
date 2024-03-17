@@ -25,8 +25,8 @@ function MotionImage({ imageJson, loop, height, width }: MotionImageAlises) {
 
   return (
     <div
-      className={`${height ? `h-[${height}]` : "h-[200px]"} ${
-        width ? `h-[${width}]` : "max-w-[200px] z-30 "
+      className={`${height ? `h-[${height}]` : "h-full "} ${
+        width ? `h-[${width}]` : "w-full z-30 "
       }`}
     >
       {!lottieLoaded && <SyncLoader />}
